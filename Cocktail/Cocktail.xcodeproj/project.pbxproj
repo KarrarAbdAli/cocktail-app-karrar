@@ -11,7 +11,35 @@
 		E46B6C932DB2EBE100F1B3A7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B6C922DB2EBE100F1B3A7 /* ContentView.swift */; };
 		E46B6C952DB2EBE300F1B3A7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46B6C942DB2EBE300F1B3A7 /* Assets.xcassets */; };
 		E46B6C982DB2EBE300F1B3A7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46B6C972DB2EBE300F1B3A7 /* Preview Assets.xcassets */; };
+		E46B6CA62DB2ED4600F1B3A7 /* CocktailKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E46B6CA52DB2ED4600F1B3A7 /* CocktailKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E46B6CA92DB2ED4600F1B3A7 /* CocktailKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46B6CA32DB2ED4600F1B3A7 /* CocktailKit.framework */; };
+		E46B6CAA2DB2ED4600F1B3A7 /* CocktailKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E46B6CA32DB2ED4600F1B3A7 /* CocktailKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		E46B6CB02DB2ED5700F1B3A7 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B6CAF2DB2ED5700F1B3A7 /* Cocktail.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E46B6CA72DB2ED4600F1B3A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46B6C852DB2EBE100F1B3A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E46B6CA22DB2ED4600F1B3A7;
+			remoteInfo = CocktailKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E46B6CAE2DB2ED4600F1B3A7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E46B6CAA2DB2ED4600F1B3A7 /* CocktailKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E46B6C8D2DB2EBE100F1B3A7 /* Cocktail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocktail.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,10 +47,21 @@
 		E46B6C922DB2EBE100F1B3A7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E46B6C942DB2EBE300F1B3A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E46B6C972DB2EBE300F1B3A7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E46B6CA32DB2ED4600F1B3A7 /* CocktailKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocktailKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46B6CA52DB2ED4600F1B3A7 /* CocktailKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocktailKit.h; sourceTree = "<group>"; };
+		E46B6CAF2DB2ED5700F1B3A7 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		E46B6C8A2DB2EBE100F1B3A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46B6CA92DB2ED4600F1B3A7 /* CocktailKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46B6CA02DB2ED4600F1B3A7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -36,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				E46B6C8F2DB2EBE100F1B3A7 /* Cocktail */,
+				E46B6CA42DB2ED4600F1B3A7 /* CocktailKit */,
 				E46B6C8E2DB2EBE100F1B3A7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -44,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				E46B6C8D2DB2EBE100F1B3A7 /* Cocktail.app */,
+				E46B6CA32DB2ED4600F1B3A7 /* CocktailKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +108,27 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		E46B6CA42DB2ED4600F1B3A7 /* CocktailKit */ = {
+			isa = PBXGroup;
+			children = (
+				E46B6CA52DB2ED4600F1B3A7 /* CocktailKit.h */,
+				E46B6CAF2DB2ED5700F1B3A7 /* Cocktail.swift */,
+			);
+			path = CocktailKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E46B6C9E2DB2ED4600F1B3A7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46B6CA62DB2ED4600F1B3A7 /* CocktailKit.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		E46B6C8C2DB2EBE100F1B3A7 /* Cocktail */ = {
@@ -77,15 +138,35 @@
 				E46B6C892DB2EBE100F1B3A7 /* Sources */,
 				E46B6C8A2DB2EBE100F1B3A7 /* Frameworks */,
 				E46B6C8B2DB2EBE100F1B3A7 /* Resources */,
+				E46B6CAE2DB2ED4600F1B3A7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E46B6CA82DB2ED4600F1B3A7 /* PBXTargetDependency */,
 			);
 			name = Cocktail;
 			productName = Cocktail;
 			productReference = E46B6C8D2DB2EBE100F1B3A7 /* Cocktail.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E46B6CA22DB2ED4600F1B3A7 /* CocktailKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46B6CAB2DB2ED4600F1B3A7 /* Build configuration list for PBXNativeTarget "CocktailKit" */;
+			buildPhases = (
+				E46B6C9E2DB2ED4600F1B3A7 /* Headers */,
+				E46B6C9F2DB2ED4600F1B3A7 /* Sources */,
+				E46B6CA02DB2ED4600F1B3A7 /* Frameworks */,
+				E46B6CA12DB2ED4600F1B3A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocktailKit;
+			productName = CocktailKit;
+			productReference = E46B6CA32DB2ED4600F1B3A7 /* CocktailKit.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +180,10 @@
 				TargetAttributes = {
 					E46B6C8C2DB2EBE100F1B3A7 = {
 						CreatedOnToolsVersion = 14.1;
+					};
+					E46B6CA22DB2ED4600F1B3A7 = {
+						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -116,6 +201,7 @@
 			projectRoot = "";
 			targets = (
 				E46B6C8C2DB2EBE100F1B3A7 /* Cocktail */,
+				E46B6CA22DB2ED4600F1B3A7 /* CocktailKit */,
 			);
 		};
 /* End PBXProject section */
@@ -127,6 +213,13 @@
 			files = (
 				E46B6C982DB2EBE300F1B3A7 /* Preview Assets.xcassets in Resources */,
 				E46B6C952DB2EBE300F1B3A7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46B6CA12DB2ED4600F1B3A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -142,7 +235,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E46B6C9F2DB2ED4600F1B3A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46B6CB02DB2ED5700F1B3A7 /* Cocktail.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E46B6CA82DB2ED4600F1B3A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E46B6CA22DB2ED4600F1B3A7 /* CocktailKit */;
+			targetProxy = E46B6CA72DB2ED4600F1B3A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		E46B6C992DB2EBE300F1B3A7 /* Debug */ = {
@@ -262,6 +371,7 @@
 		E46B6C9C2DB2EBE300F1B3A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +401,7 @@
 		E46B6C9D2DB2EBE300F1B3A7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -317,6 +428,69 @@
 			};
 			name = Release;
 		};
+		E46B6CAC2DB2ED4600F1B3A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AH4RYQ9UUY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Karrar-Abd-Ali.CocktailKit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E46B6CAD2DB2ED4600F1B3A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = AH4RYQ9UUY;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Karrar-Abd-Ali.CocktailKit";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +508,15 @@
 			buildConfigurations = (
 				E46B6C9C2DB2EBE300F1B3A7 /* Debug */,
 				E46B6C9D2DB2EBE300F1B3A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46B6CAB2DB2ED4600F1B3A7 /* Build configuration list for PBXNativeTarget "CocktailKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46B6CAC2DB2ED4600F1B3A7 /* Debug */,
+				E46B6CAD2DB2ED4600F1B3A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
