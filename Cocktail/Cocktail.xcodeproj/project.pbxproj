@@ -15,6 +15,8 @@
 		E46B6CA92DB2ED4600F1B3A7 /* CocktailKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46B6CA32DB2ED4600F1B3A7 /* CocktailKit.framework */; };
 		E46B6CAA2DB2ED4600F1B3A7 /* CocktailKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E46B6CA32DB2ED4600F1B3A7 /* CocktailKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E46B6CB02DB2ED5700F1B3A7 /* Cocktail.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B6CAF2DB2ED5700F1B3A7 /* Cocktail.swift */; };
+		E46B6CB22DB2EE5900F1B3A7 /* CocktailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B6CB12DB2EE5900F1B3A7 /* CocktailService.swift */; };
+		E46B6CB42DB2EEFB00F1B3A7 /* CocktailFetchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46B6CB32DB2EEFB00F1B3A7 /* CocktailFetchable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		E46B6CA32DB2ED4600F1B3A7 /* CocktailKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CocktailKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46B6CA52DB2ED4600F1B3A7 /* CocktailKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CocktailKit.h; sourceTree = "<group>"; };
 		E46B6CAF2DB2ED5700F1B3A7 /* Cocktail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cocktail.swift; sourceTree = "<group>"; };
+		E46B6CB12DB2EE5900F1B3A7 /* CocktailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailService.swift; sourceTree = "<group>"; };
+		E46B6CB32DB2EEFB00F1B3A7 /* CocktailFetchable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailFetchable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,8 @@
 			children = (
 				E46B6CA52DB2ED4600F1B3A7 /* CocktailKit.h */,
 				E46B6CAF2DB2ED5700F1B3A7 /* Cocktail.swift */,
+				E46B6CB12DB2EE5900F1B3A7 /* CocktailService.swift */,
+				E46B6CB32DB2EEFB00F1B3A7 /* CocktailFetchable.swift */,
 			);
 			path = CocktailKit;
 			sourceTree = "<group>";
@@ -239,7 +245,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E46B6CB42DB2EEFB00F1B3A7 /* CocktailFetchable.swift in Sources */,
 				E46B6CB02DB2ED5700F1B3A7 /* Cocktail.swift in Sources */,
+				E46B6CB22DB2EE5900F1B3A7 /* CocktailService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
