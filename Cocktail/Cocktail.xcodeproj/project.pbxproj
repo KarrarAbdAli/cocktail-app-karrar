@@ -47,6 +47,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E45310482DB2FCC0006E3595 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		E46B6C8D2DB2EBE100F1B3A7 /* Cocktail.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cocktail.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E46B6C902DB2EBE100F1B3A7 /* CocktailApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocktailApp.swift; sourceTree = "<group>"; };
 		E46B6C942DB2EBE300F1B3A7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -102,6 +103,7 @@
 		E46B6C8F2DB2EBE100F1B3A7 /* Cocktail */ = {
 			isa = PBXGroup;
 			children = (
+				E45310482DB2FCC0006E3595 /* Info.plist */,
 				E46B6CBB2DB2F2D900F1B3A7 /* ViewModels */,
 				E46B6CB82DB2F1D200F1B3A7 /* Views */,
 				E46B6CB52DB2F11300F1B3A7 /* State */,
@@ -424,6 +426,7 @@
 				DEVELOPMENT_TEAM = AH4RYQ9UUY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cocktail/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -454,6 +457,7 @@
 				DEVELOPMENT_TEAM = AH4RYQ9UUY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Cocktail/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
