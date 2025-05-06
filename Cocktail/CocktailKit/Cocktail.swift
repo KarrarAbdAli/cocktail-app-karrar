@@ -10,11 +10,11 @@ import Foundation
 public struct Cocktail: Identifiable, Codable {
     public let id: String
     public let name: String
-    public let image: String
+    public let imageUrl: String
 
     public init(id: String, name: String, image: String) {
         self.id = id
         self.name = name
-        self.image = image
+        self.imageUrl = image
     }
 }

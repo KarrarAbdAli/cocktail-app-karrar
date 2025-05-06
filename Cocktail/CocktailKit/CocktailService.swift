@@ -9,7 +9,7 @@ import Foundation
 
 public final class CocktailService: CocktailFetchable {
     private let session: URLSession
-    private let url = URL(string: "http://schibsted-nde-apps-recruitment-task.eu-central-1.elasticbeanstalk.com/cocktails")!
+    private let url = URL(string: "http://schibsted:mojito@schibsted-nde-apps-recruitment-task.eu-central-1.elasticbeanstalk.com/cocktails")!
     
     private let username: String
     private let password: String

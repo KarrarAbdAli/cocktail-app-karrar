@@ -32,7 +32,7 @@ struct CocktailListView: View {
     private var cocktailList: some View {
         List(viewModel.cocktails) { cocktail in
             HStack(spacing: 16) {
-                AsyncImage(url: URL(string: cocktail.image)) { phase in
+                AsyncImage(url: URL(string: cocktail.imageUrl)) { phase in
                     switch phase {
                     case .success(let image):
                         image.resizable().scaledToFit()
